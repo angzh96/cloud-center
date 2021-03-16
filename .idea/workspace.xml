@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="cloud-center:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2457d831-492e-42be-859f-b5c74cdf7396" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/controller/CarNetController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/dao/CarBasicDataMapper.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/service/impl/CarNetServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/service/impl/CarBasicDataServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/service/CarBasicDataService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/CarENVServer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/CarVideoServer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/CarControlServer.java" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1dNtZlLov6NjgpZ9CvyLQYrsO3x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\边缘云中心\cloud-center\src\main\java\com\intelligence\edge\dao" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.intelligence.edge.service.impl" />
+      <recent name="com.intelligence.edge.pojo" />
+      <recent name="com.intelligence.edge.service" />
+      <recent name="com.intelligence.edge" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\边缘云中心\cloud-center\src\main\resources\mapper" />
+      <recent name="F:\边缘云中心\cloud-center\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Starter">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="cloud-center" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UDPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UDPClient" />
+      <module name="cloud-center" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicControllerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-center" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasicControllerTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SQLTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-center" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SQLTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Starter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-center" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.intelligence.edge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.intelligence.edge.Starter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Starter" />
+        <item itemvalue="JUnit.SQLTest.test" />
+        <item itemvalue="JUnit.BasicControllerTest.test" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.UDPClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2457d831-492e-42be-859f-b5c74cdf7396" name="Default Changelist" comment="" />
+      <created>1592277435950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592277435950</updated>
+      <workItem from="1592277437382" duration="50107000" />
+      <workItem from="1592445273828" duration="11386000" />
+      <workItem from="1592551958191" duration="3206000" />
+      <workItem from="1592657908614" duration="540000" />
+      <workItem from="1592664633184" duration="103000" />
+      <workItem from="1592800865512" duration="1633000" />
+      <workItem from="1592813398753" duration="5000" />
+      <workItem from="1592975448565" duration="5043000" />
+      <workItem from="1593002342267" duration="256000" />
+      <workItem from="1593243885567" duration="1031000" />
+      <workItem from="1593244946611" duration="2348000" />
+      <workItem from="1593247356699" duration="40488000" />
+      <workItem from="1593350845659" duration="1195000" />
+      <workItem from="1593352401393" duration="594000" />
+      <workItem from="1593410490537" duration="19251000" />
+      <workItem from="1593603240370" duration="1346000" />
+      <workItem from="1593678196362" duration="19948000" />
+      <workItem from="1593773931733" duration="297000" />
+      <workItem from="1593782807298" duration="84000" />
+      <workItem from="1593783803700" duration="756000" />
+      <workItem from="1594202862452" duration="181000" />
+      <workItem from="1594203060903" duration="5267000" />
+      <workItem from="1594793293826" duration="598000" />
+      <workItem from="1594800102724" duration="5000" />
+      <workItem from="1594868888595" duration="4000" />
+      <workItem from="1594869570998" duration="734000" />
+      <workItem from="1594871952715" duration="6960000" />
+      <workItem from="1594902285155" duration="5000" />
+      <workItem from="1596441874386" duration="1486000" />
+      <workItem from="1596500774965" duration="1194000" />
+      <workItem from="1597379240616" duration="20000" />
+      <workItem from="1599649541074" duration="6270000" />
+      <workItem from="1599825536455" duration="8000" />
+      <workItem from="1600315693240" duration="18000" />
+      <workItem from="1600315814955" duration="1825000" />
+      <workItem from="1600321367024" duration="4428000" />
+      <workItem from="1600325817823" duration="420000" />
+      <workItem from="1600326397030" duration="4848000" />
+      <workItem from="1600331311127" duration="10000" />
+      <workItem from="1600585292879" duration="19000" />
+      <workItem from="1601123442330" duration="405000" />
+      <workItem from="1601123870366" duration="14000" />
+      <workItem from="1601123954110" duration="253000" />
+      <workItem from="1601124372113" duration="4341000" />
+      <workItem from="1601170810579" duration="1214000" />
+      <workItem from="1601270632381" duration="257000" />
+      <workItem from="1601287071049" duration="3992000" />
+      <workItem from="1601291081250" duration="4616000" />
+      <workItem from="1601426763109" duration="1618000" />
+      <workItem from="1601429035969" duration="1494000" />
+      <workItem from="1602040851730" duration="88000" />
+      <workItem from="1602041718412" duration="1159000" />
+      <workItem from="1602056005747" duration="1652000" />
+      <workItem from="1602748621398" duration="24612000" />
+      <workItem from="1603242823140" duration="54149000" />
+      <workItem from="1605007435982" duration="596000" />
+      <workItem from="1605016031108" duration="2335000" />
+      <workItem from="1605600583748" duration="151000" />
+      <workItem from="1605613682543" duration="314000" />
+      <workItem from="1614487579455" duration="1017000" />
+      <workItem from="1614762623768" duration="15333000" />
+      <workItem from="1614928270415" duration="1600000" />
+      <workItem from="1614931168585" duration="913000" />
+      <workItem from="1615180313350" duration="443000" />
+      <workItem from="1615375091581" duration="2134000" />
+      <workItem from="1615810728159" duration="27000" />
+      <workItem from="1615810758478" duration="365000" />
+      <workItem from="1615811226459" duration="213000" />
+      <workItem from="1615811783811" duration="2302000" />
+      <workItem from="1615816533629" duration="960000" />
+    </task>
+    <task id="LOCAL-00001" summary="添加webSocket">
+      <created>1593255879692</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593255879692</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加了连接测试功能">
+      <created>1593334068720</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593334068720</updated>
+    </task>
+    <task id="LOCAL-00003" summary="完善了设备管理功能">
+      <created>1593344911798</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593344911798</updated>
+    </task>
+    <task id="LOCAL-00004" summary="启动重置所有设备的连接">
+      <created>1593351499499</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593351499499</updated>
+    </task>
+    <task id="LOCAL-00005" summary="启动重置所有设备的连接">
+      <created>1593351944772</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593351944772</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修复了Linux连通性测试失效BUG">
+      <created>1593529932580</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593529932581</updated>
+    </task>
+    <task id="LOCAL-00007" summary="完善控制端口重启">
+      <created>1593771288264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593771288264</updated>
+    </task>
+    <task id="LOCAL-00008" summary="v1">
+      <created>1594207702498</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1594207702498</updated>
+    </task>
+    <task id="LOCAL-00009" summary="端口配置移入到数据库">
+      <created>1601270887195</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601270887195</updated>
+    </task>
+    <task id="LOCAL-00010" summary="端口配置移入到数据库，完善新增和删除车辆功能">
+      <created>1601294831412</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601294831412</updated>
+    </task>
+    <task id="LOCAL-00011" summary="端口配置移入到数据库，完善新增和删除车辆功能">
+      <created>1601294926632</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601294926632</updated>
+    </task>
+    <task id="LOCAL-00012" summary="端口配置移入到数据库，完善新增和删除车辆功能">
+      <created>1601294986169</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601294986169</updated>
+    </task>
+    <task id="LOCAL-00013" summary="端口配置移入到数据库，完善新增和删除车辆功能">
+      <created>1601295098433</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601295098433</updated>
+    </task>
+    <task id="LOCAL-00014" summary="端口配置移入到数据库，完善新增和删除车辆功能">
+      <created>1601295202393</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1601295202393</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加webSocket" />
+    <MESSAGE value="添加了连接测试功能" />
+    <MESSAGE value="完善了设备管理功能" />
+    <MESSAGE value="启动重置所有设备的连接" />
+    <MESSAGE value="修复了Linux连通性测试失效BUG" />
+    <MESSAGE value="完善控制端口重启" />
+    <MESSAGE value="v1" />
+    <MESSAGE value="端口配置移入到数据库" />
+    <MESSAGE value="端口配置移入到数据库，完善新增和删除车辆功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="端口配置移入到数据库，完善新增和删除车辆功能" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="208" y="31" key="#Project_Structure" timestamp="1614779311870">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="31" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1614779311870" />
+    <state x="470" y="216" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1614834936963">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="470" y="216" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1614834936963" />
+    <state width="1398" height="176" key="GridCell.Tab.0.bottom" timestamp="1615817732304">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="176" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615817732304" />
+    <state width="1398" height="197" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1614930383813" />
+    <state width="1398" height="176" key="GridCell.Tab.0.center" timestamp="1615817732303">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="176" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615817732303" />
+    <state width="1398" height="197" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1614930383812" />
+    <state width="1398" height="176" key="GridCell.Tab.0.left" timestamp="1615817732303">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="176" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615817732303" />
+    <state width="1398" height="197" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1614930383811" />
+    <state width="1398" height="176" key="GridCell.Tab.0.right" timestamp="1615817732303">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="176" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615817732303" />
+    <state width="1398" height="197" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1614930383813" />
+    <state width="1398" height="176" key="GridCell.Tab.1.bottom" timestamp="1615817732305">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="176" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615817732305" />
+    <state width="1398" height="197" key="GridCell.Tab.1.bottom/0.23.1440.792@0.23.1440.792" timestamp="1614827976578" />
+    <state width="1398" height="176" key="GridCell.Tab.1.center" timestamp="1615817732305">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="176" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1615817732305" />
+    <state width="1398" height="197" key="GridCell.Tab.1.center/0.23.1440.792@0.23.1440.792" timestamp="1614827976577" />
+    <state width="1398" height="176" key="GridCell.Tab.1.left" timestamp="1615817732304">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="176" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1615817732304" />
+    <state width="1398" height="197" key="GridCell.Tab.1.left/0.23.1440.792@0.23.1440.792" timestamp="1614827976576" />
+    <state width="1398" height="176" key="GridCell.Tab.1.right" timestamp="1615817732305">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="176" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1615817732305" />
+    <state width="1398" height="197" key="GridCell.Tab.1.right/0.23.1440.792@0.23.1440.792" timestamp="1614827976577" />
+    <state x="221" y="23" width="1024" height="792" key="SettingsEditor" timestamp="1615810933754">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="23" width="1024" height="792" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1615810933754" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1614488111246">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1614488111246" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

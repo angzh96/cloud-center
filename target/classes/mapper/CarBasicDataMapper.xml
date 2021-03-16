@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.intelligence.edge.dao.CarBasicDataMapper">
+
+    <select id="getAllCarBasicData" resultType="CarBasicData">
+        SELECT *,id deviceID,model type,c_port cPort,e_port ePort,v_port vPort
+        from device_basicdata where types = 1;
+    </select>
+
+    <select id="getCarBasicDataByID" resultType="CarBasicData" parameterType="String">
+        SELECT * from device_basicdata WHERE id=#{deviceID};
+    </select>
+
+    <insert id="insertCarBasicData" parameterType="CarBasicData" useGeneratedKeys="true"
+            keyProperty="id">
+        INSERT INTO device_basicdata
+        (`id`,
+        `types`,
+        `model`,
+        `owner`,
+        `electricity`,
+        `c_port`,
+        `e_port`,
+        `v_port`)
+        VALUES (#{deviceID},
+        1,
+        #{type},
+        #{owner},
+        #{electricity},
+        #{cPort},
+        #{ePort},
+        #{vPort});
+    </insert>
+
+    <delete id="deleteCarBasicDataByID" parameterType="String">
+        DELETE FROM device_basicdata WHERE id=#{deviceID};
+    </delete>
+
+    <update id="updateCarBasicData" parameterType="CarBasicData">
+        update device_basicdata
+            set
+            model = #{type},
+            owner = #{owner}
+        where id = #{deviceID};
+    </update>
+
+</mapper>

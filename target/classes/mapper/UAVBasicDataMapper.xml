@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.intelligence.edge.dao.UAVBasicDataMapper">
+    <select id="getAllUAVBasicData" resultType="UAVBasicData">
+        select *,id deviceID,model type,c_port cPort,e_port ePort,v_port vPort
+        from device_basicdata where types = 0;
+    </select>
+
+    <select id="getUAVBasicDataByID" resultType="UAVBasicData">
+        select * from device_databasic where types = 0 and id = #{deviceID};
+    </select>
+
+    <insert id="insertUAVBasicData" parameterType="UAVBasicData" useGeneratedKeys="true"
+            keyProperty="id">
+        insert into device_basicdata
+        (`id`,
+        `types`,
+        `model`,
+        `owner`,
+        `electricity`,
+        `c_port`,
+        `e_port`,
+        `v_port`)
+        values (#{deviceID},
+        0,
+        #{type},
+        #{owner},
+        #{electricity},
+        #{cPort},
+        #{ePort},
+        #{vPort});
+    </insert>
+
+    <delete id="deleteUAVBasicDataByID" parameterType="String">
+        delete from device_basicdata where id = #{deviceID};
+    </delete>
+
+    <update id="updateUAVBasicData" parameterType="UAVBasicData">
+        update device_basicdata
+        set model = #{type},
+        owner = #{owner}
+        where id = #{deviceID};
+    </update>
+
+</mapper>
