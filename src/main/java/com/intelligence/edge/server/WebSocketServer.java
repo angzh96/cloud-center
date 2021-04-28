@@ -21,7 +21,7 @@ import javax.websocket.server.ServerEndpoint;
  * @author shik2
  * @date 2020/06/27
  **/
-@ServerEndpoint("/imserver/{carID}")
+@ServerEndpoint("/imserver/{deviceID}")
 @Component
 @Slf4j(topic = "c.WebSocketServer")
 public class WebSocketServer {
@@ -32,32 +32,32 @@ public class WebSocketServer {
     private static ConcurrentHashMap<String,WebSocketServer> webSocketMap = new ConcurrentHashMap<>();
     /**与某个客户端的连接会话，需要通过它来给客户端发送数据*/
     private Session session;
-    /**接收carID*/
-    private String carID="";
+    /**接收deviceID*/
+    private String deviceID="";
 
     /**
      * 连接建立成功调用的方法*/
     @OnOpen
-    public void onOpen(Session session,@PathParam("carID") String carID) {
+    public void onOpen(Session session,@PathParam("deviceID") String deviceID) {
         this.session = session;
-        this.carID=carID;
-        if(webSocketMap.containsKey(carID)){
-            webSocketMap.remove(carID);
-            webSocketMap.put(carID,this);
+        this.deviceID=deviceID;
+        if(webSocketMap.containsKey(deviceID)){
+            webSocketMap.remove(deviceID);
+            webSocketMap.put(deviceID,this);
             //加入set中
         }else{
-            webSocketMap.put(carID,this);
+            webSocketMap.put(deviceID,this);
             //加入set中
             addOnlineCount();
             //在线数加1
         }
 
-        log.info("用户连接:"+carID+",当前在线人数为:" + getOnlineCount());
+        log.info("用户连接:"+deviceID+",当前在线人数为:" + getOnlineCount());
 
         try {
             sendMessage("连接成功");
         } catch (IOException e) {
-            log.error("用户:"+carID+",网络异常!!!!!!");
+            log.error("用户:"+deviceID+",网络异常!!!!!!");
         }
     }
 
@@ -66,12 +66,12 @@ public class WebSocketServer {
      */
     @OnClose
     public void onClose() {
-        if(webSocketMap.containsKey(carID)){
-            webSocketMap.remove(carID);
+        if(webSocketMap.containsKey(deviceID)){
+            webSocketMap.remove(deviceID);
             //从set中删除
             subOnlineCount();
         }
-        log.info("用户退出:"+carID+",当前在线人数为:" + getOnlineCount());
+        log.info("用户退出:"+deviceID+",当前在线人数为:" + getOnlineCount());
     }
 
     /**
@@ -80,7 +80,7 @@ public class WebSocketServer {
      * @param message 客户端发送过来的消息*/
     @OnMessage
     public void onMessage(String message, Session session) {
-        log.info("用户消息:"+carID+",报文:"+message);
+        log.info("用户消息:"+deviceID+",报文:"+message);
         //可以群发消息
         //消息保存到数据库、redis
         if(StringUtils.isNotBlank(message)){
@@ -88,7 +88,7 @@ public class WebSocketServer {
                 //解析发送的报文
                 JSONObject jsonObject = JSON.parseObject(message);
                 //追加发送人(防止串改)
-                jsonObject.put("fromcarID",this.carID);
+                jsonObject.put("fromcarID",this.deviceID);
                 String tocarID=jsonObject.getString("tocarID");
                 //传送给对应tocarID用户的websocket
                 if(StringUtils.isNotBlank(tocarID)&&webSocketMap.containsKey(tocarID)){
@@ -110,7 +110,7 @@ public class WebSocketServer {
      */
     @OnError
     public void onError(Session session, Throwable error) {
-        log.error("用户错误:"+this.carID+",原因:"+error.getMessage());
+        log.error("用户错误:"+this.deviceID+",原因:"+error.getMessage());
         error.printStackTrace();
     }
     /**
@@ -124,12 +124,12 @@ public class WebSocketServer {
     /**
      * 发送自定义消息
      * */
-    public static void sendInfo(String message,@PathParam("carID") String carID) throws IOException {
-        log.info("发送消息到:"+carID+"，报文:"+message);
-        if(StringUtils.isNotBlank(carID)&&webSocketMap.containsKey(carID)){
-            webSocketMap.get(carID).sendMessage(message);
+    public static void sendInfo(String message,@PathParam("deviceID") String deviceID) throws IOException {
+        log.info("发送消息到:"+deviceID+"，报文:"+message);
+        if(StringUtils.isNotBlank(deviceID)&&webSocketMap.containsKey(deviceID)){
+            webSocketMap.get(deviceID).sendMessage(message);
         }else{
-            log.error("设备："+carID+",不在线！");
+            log.error("设备："+deviceID+",不在线！");
         }
     }
 

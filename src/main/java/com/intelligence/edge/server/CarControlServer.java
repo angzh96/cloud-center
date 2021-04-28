@@ -2,6 +2,7 @@ package com.intelligence.edge.server;
 
 import com.intelligence.edge.dao.CarBasicDataMapper;
 import com.intelligence.edge.data.CarTempData;
+import com.intelligence.edge.pojo.Position;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,7 @@ public class CarControlServer {
     private DataOutputStream out;
     private List<CarENVServer> cenvList = new ArrayList<>();
     private List<CarVideoServer> cvsList = new ArrayList<>();
+    private List<CarUWBServer> cuwbsList = new ArrayList<>();
 
     public CarControlServer(String deviceID, int port) {
         this.deviceID = deviceID;
@@ -68,7 +70,8 @@ public class CarControlServer {
                         log.info(deviceID + " 控制服务端收到信息：" + msg);
                         CarTempData.carState.put(deviceID, 1);//表示设备已经在线
                         receiveData(deviceID);
-                        receiveVideo(deviceID);
+                        receiveData_UWB(deviceID);
+                        //receiveVideo(deviceID);
                         Thread threadP = new Thread(new Polling(deviceID));
                         threadP.start();
                         log.info(deviceID+"设备状态修改完毕，可开启数据连接");
@@ -96,6 +99,7 @@ public class CarControlServer {
             openConnect();
             closeConnection(deviceID);
             closeVideo(deviceID);
+            closeUWBData(deviceID);
             log.info("重置"+deviceID+"-"+port+"控制服务端");
         } catch (IOException e) {
             e.printStackTrace();
@@ -168,6 +172,49 @@ public class CarControlServer {
     }
 
     /**
+     * 接收无人车在UWB场景中的环境数据
+     */
+    public void receiveData_UWB(String deviceID) {
+        try{
+            int flag = 0;
+            CarUWBServer uwbServer = null;
+            for (CarUWBServer cuwbs : cuwbsList) {
+                if (cuwbs.getDeviceID().equals(deviceID)) {
+                    uwbServer = cuwbs;
+                    log.info("使用已有车辆UWB数据连接");
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0) {
+                uwbServer = new CarUWBServer(deviceID, CarTempData.carUWBPort.get(deviceID));
+                cuwbsList.add(uwbServer);
+                log.info("创建新的车辆UWB数据连接");
+            }
+            uwbServer.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 使用tcp连接发送基站位置给小车
+     */
+    public void senddata(){
+        String aid = CarTempData.carAnchorID.get(deviceID);
+        //Position pos = new Position(CarTempData.anchorPos.get(aid).getLongitude(), CarTempData.anchorPos.get(aid).getLatitude());
+        //log.info(pos.toString());
+        String pos = "Position:"+CarTempData.anchorPos.get(aid).getLongitude()+","+CarTempData.anchorPos.get(aid).getLatitude();
+        log.info(pos);
+        try {
+            out.write(pos.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    /**
      * 接收无人车的发送的视频文件
      *
      * @param carID
@@ -193,6 +240,16 @@ public class CarControlServer {
             useServer.load();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void closeUWBData(String deviceID) {
+        for (CarUWBServer cus : cuwbsList) {
+            if (cus.getDeviceID().equals(deviceID)) {
+                cus.end();
+                log.info("关闭UWB数据连接");
+                break;
+            }
         }
     }
 

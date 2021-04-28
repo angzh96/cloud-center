@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.intelligence.edge.dao.UWBAnchorDataMapper">
+    <select id="getAllAnchorInfo" resultType="AnchorInfo">
+        select *, id anchorID from AnchorUWBtbl;
+    </select>
+
+    <select id="getAnchorAdjacent" parameterType="String" resultType="AdjacentInfo">
+        select * from AnchorRelationtbl where id = #{anchorID};
+    </select>
+
+    <select id="getAnchorInfoById" parameterType="String" resultType="AnchorInfo">
+        select *, id anchorID from AnchorUWBtbl where id = #{anchorID};
+    </select>
+</mapper>

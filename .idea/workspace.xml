@@ -24,10 +24,34 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/zxym" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2457d831-492e-42be-859f-b5c74cdf7396" name="Default Changelist" comment="" />
+    <list default="true" id="2457d831-492e-42be-859f-b5c74cdf7396" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/data/CarTempData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/data/CarTempData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/pojo/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/pojo/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/runner/ResetConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/runner/ResetConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/CarControlServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/CarControlServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intelligence/edge/data/CarTempData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intelligence/edge/data/CarTempData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intelligence/edge/pojo/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intelligence/edge/pojo/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intelligence/edge/runner/ResetConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intelligence/edge/runner/ResetConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intelligence/edge/server/CarControlServer$Polling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intelligence/edge/server/CarControlServer$Polling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intelligence/edge/server/CarControlServer$Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intelligence/edge/server/CarControlServer$Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intelligence/edge/server/CarControlServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intelligence/edge/server/CarControlServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intelligence/edge/server/WebSocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intelligence/edge/server/WebSocketServer.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,13 +72,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/controller/CarNetController.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/dao/CarBasicDataMapper.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/service/impl/CarNetServiceImpl.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/service/impl/CarBasicDataServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/service/CarBasicDataService.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/CarENVServer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/service/impl/CarBasicDataServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/service/impl/CarNetServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/CarVideoServer.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/CarControlServer.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/server/CarENVServer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/intelligence/edge/dao/CarBasicDataMapper.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
@@ -78,7 +109,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../源程序/cloud-center" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -166,7 +197,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBootOptions">
     <option name="showAdditionalConfigNotification" value="false" />
   </component>
@@ -353,14 +384,26 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/zxym" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -388,45 +431,65 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="470" y="216" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1614834936963" />
-    <state width="1398" height="176" key="GridCell.Tab.0.bottom" timestamp="1615817732304">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1618453427101">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1618453427101" />
+    <state width="1877" height="803" key="GridCell.Tab.0.bottom" timestamp="1619512236753">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615817732304" />
+    <state width="1877" height="803" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619512236753" />
+    <state width="1877" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618545000252" />
     <state width="1398" height="197" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1614930383813" />
-    <state width="1398" height="176" key="GridCell.Tab.0.center" timestamp="1615817732303">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="803" key="GridCell.Tab.0.center" timestamp="1619512236753">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615817732303" />
+    <state width="1877" height="803" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619512236753" />
+    <state width="1877" height="293" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618545000252" />
     <state width="1398" height="197" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1614930383812" />
-    <state width="1398" height="176" key="GridCell.Tab.0.left" timestamp="1615817732303">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="803" key="GridCell.Tab.0.left" timestamp="1619512236753">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615817732303" />
+    <state width="1877" height="803" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619512236753" />
+    <state width="1877" height="293" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618545000252" />
     <state width="1398" height="197" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1614930383811" />
-    <state width="1398" height="176" key="GridCell.Tab.0.right" timestamp="1615817732303">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="803" key="GridCell.Tab.0.right" timestamp="1619512236753">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615817732303" />
+    <state width="1877" height="803" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619512236753" />
+    <state width="1877" height="293" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618545000252" />
     <state width="1398" height="197" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1614930383813" />
-    <state width="1398" height="176" key="GridCell.Tab.1.bottom" timestamp="1615817732305">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="803" key="GridCell.Tab.1.bottom" timestamp="1619512236754">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615817732305" />
+    <state width="1877" height="803" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619512236754" />
+    <state width="1877" height="293" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618545000252" />
     <state width="1398" height="197" key="GridCell.Tab.1.bottom/0.23.1440.792@0.23.1440.792" timestamp="1614827976578" />
-    <state width="1398" height="176" key="GridCell.Tab.1.center" timestamp="1615817732305">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="803" key="GridCell.Tab.1.center" timestamp="1619512236754">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1615817732305" />
+    <state width="1877" height="803" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619512236754" />
+    <state width="1877" height="293" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618545000252" />
     <state width="1398" height="197" key="GridCell.Tab.1.center/0.23.1440.792@0.23.1440.792" timestamp="1614827976577" />
-    <state width="1398" height="176" key="GridCell.Tab.1.left" timestamp="1615817732304">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="803" key="GridCell.Tab.1.left" timestamp="1619512236753">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1615817732304" />
+    <state width="1877" height="803" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619512236753" />
+    <state width="1877" height="293" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618545000252" />
     <state width="1398" height="197" key="GridCell.Tab.1.left/0.23.1440.792@0.23.1440.792" timestamp="1614827976576" />
-    <state width="1398" height="176" key="GridCell.Tab.1.right" timestamp="1615817732305">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1877" height="803" key="GridCell.Tab.1.right" timestamp="1619512236754">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="176" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1615817732305" />
+    <state width="1877" height="803" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1619512236754" />
+    <state width="1877" height="293" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618545000252" />
     <state width="1398" height="197" key="GridCell.Tab.1.right/0.23.1440.792@0.23.1440.792" timestamp="1614827976577" />
     <state x="221" y="23" width="1024" height="792" key="SettingsEditor" timestamp="1615810933754">
       <screen x="0" y="0" width="1440" height="900" />

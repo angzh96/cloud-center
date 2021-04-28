@@ -1,19 +1,19 @@
 package com.intelligence.edge.data;
 
 import com.intelligence.edge.dao.CarBasicDataMapper;
+import com.intelligence.edge.dao.UWBAnchorDataMapper;
+import com.intelligence.edge.pojo.AdjacentInfo;
+import com.intelligence.edge.pojo.AnchorInfo;
 import com.intelligence.edge.pojo.CarBasicData;
 import com.intelligence.edge.pojo.Position;
 import com.intelligence.edge.server.CarControlServer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import sun.security.krb5.Config;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author shik2
@@ -38,9 +38,24 @@ public class CarTempData {
     // 无人车视频接收端口map
     public static Map<String, Integer> carVideoPort = new HashMap<>();
 
+    // 分配给无人车的基站ID
+    public static Map<String, String> carAnchorID = new HashMap<>();
+    // 无人车与基站的距离
+    public static Map<String, LinkedList<Double> > carDistance = new HashMap<>();
+    // 基站与所属系统信息的映射
+    public static Map<String, AnchorInfo> anchorPos = new HashMap<>();
+    // 无人车接收UWB环境数据端口map
+    public static Map<String, Integer> carUWBPort = new HashMap<>();
+    // 基站与临近基站的映射
+    public static Map<String, AdjacentInfo> anchorAdj = new HashMap<>();
+    public static List<AnchorInfo> anchorList;
+
 
     @Autowired
     private CarBasicDataMapper carBasicDataMapper;
+    @Autowired
+    private UWBAnchorDataMapper uwbAnchorDataMapper;
+
 
 
     /**
@@ -62,6 +77,13 @@ public class CarTempData {
             carControlPort.put(car.getDeviceID(),car.getcPort());
             carENVPort.put(car.getDeviceID(),car.getePort());
             carVideoPort.put(car.getDeviceID(),car.getvPort());
+        }
+        carUWBPort.put("car1", 10001);
+        log.info("------读取数据库基站基本信息------");
+        anchorList = uwbAnchorDataMapper.getAllAnchorInfo();
+        for (AnchorInfo ai : anchorList) {
+            System.out.println(ai);
+            CarTempData.anchorPos.put(ai.getAnchorID(), ai);
         }
     }
 
